@@ -13,10 +13,20 @@ int gcd(int a,int b){
     return a;
 }
 
+//Optimized version of GCD calculation. Time Complexity : O(log(n))
+int gcdOptimized(int a,int b){
+    if(b==0){
+        return a;
+    }
+    else gcdOptimized(b,a%b);
+}
+
+
 int main()
 {
     int a,b;
     std::cin>>a>>b;
-    cout<<gcd(a,b)<<endl;
+    int GCD = gcdOptimized(a,b);
+    cout<<GCD;
     return 0;
 }

@@ -1,1 +1,1 @@
- cin>>a>>b;
+cout<<gcdOptimized(a,b)<<endl;

@@ -1,0 +1,41 @@
+actors and Multiples: All numbers that divide a number completely, i.e., without leaving any remainder, are called factors of that number. For example, 24 is completely divisible by 1, 2, 3, 4, 6, 8, 12, 24. Each of these numbers is called a factor of 24 and 24 is called a multiple of each of these numbers.
+
+LCM : LCM stands for Least Common Multiple. The lowest number that is exactly divisible by each of the given numbers is called the least common multiple of those numbers. For example, consider the numbers 3, 31, and 62 (2 x 31). The LCM of these numbers would be 2 x 3 x 31 = 186.
+
+To find the LCM of the given numbers, express each number as its prime factors. The product of the highest power of the prime numbers that appear in the prime factorization of any of the numbers gives us the LCM.
+For example, consider the numbers 2, 3, 4 (2 x 2), 5, 6 (2 x 3). The LCM of these numbers is 2 x 2 x 3 x 5 = 60. The highest power of 2 comes from prime factorization of 4, the highest power of 3 comes from prime factorization of 3 and prime factorization of 6, and the highest power of 5 comes from prime factorization of 5.
+
+
+HCF : The term HCF stands for Highest Common Factor. The largest number that divides two or more numbers is the highest common factor (HCF) for those numbers. For example, consider the numbers 30 (2 x 3 x 5), 36 (2 x 2 x 3 x 3), 42 (2 x 3 x 7), 45 (3 x 3 x 5). 3 is the largest number that divides each of these numbers, and hence, is the HCF for these numbers.
+
+HCF is also known as Greatest Common Divisor (GCD).
+To find the HCF of two or more numbers, express each number as its prime factors. The product of the minimum powers of common prime terms in both of the prime factorization gives the HCF. This is the method we illustrated in the above step.
+
+Also, for finding the HCF of two numbers, we can proceed by the long division method. We divide the larger number by the smaller number (divisor). Now, we divide the divisor by the remainder obtained in the previous stage. We repeat the same procedure until we get zero as the remainder. At that stage, the last divisor would be the required HCF.
+
+For example, HCF of 30 and 42:
+hcf-long-division
+
+Basic Euclidean Algorithm for HCF
+The Euclidean algorithm is based on the below facts:
+If we subtract the smaller number from larger (we reduce larger number), GCD doesn't change. So if we keep subtracting repeatedly the larger of two, we end up with GCD.
+Now instead of subtraction, if we divide the smaller number, the algorithm stops when the remainder is found to be 0.
+
+Below is the recursive function for finding GCD using Euclidean Algorithm:
+gcd(a, b)
+{
+    if (a == 0)
+        return b;
+
+    return gcd(b % a, a);
+}
+
+Time Complexity: O(log(min(a, b)))
+
+Important properties of LCM and HCF:
+For two numbers say, 'a' and 'b', LCM x HCF = a x b.
+HCF of co-primes = 1.
+For two fractions,
+HCF = HCF (Numerators) / LCM (Denominators)
+LCM = LCM (Numerators) / HCF (Denominators)
+
