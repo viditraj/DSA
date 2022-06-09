@@ -13,7 +13,7 @@ Contains the codes written in C++ and Java.
 
 - Mathematics
 
-- 
+- Bit Manipulation
 
 
 ## Authors
