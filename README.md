@@ -21,3 +21,8 @@ Contains the codes written in C++ and Java.
 - [@Vidit Raj Singh](https://www.github.com/viditraj)
 
 
+## Link
+
+Please Visit this link to get the interactive roadmap which will help you to navigate through your journey
+
+-Mindmap (https://mm.tt/2320277415?t=WaFVQArHj6)
