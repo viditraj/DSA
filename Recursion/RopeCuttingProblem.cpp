@@ -22,3 +22,5 @@ int main(){
     int res = maxCount(n,a,b,c);
     cout<<res;
 }
+
+//Time Complexity : O(3^N)
