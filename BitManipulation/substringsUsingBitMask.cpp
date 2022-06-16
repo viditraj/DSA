@@ -20,7 +20,6 @@ int main(){
     string s;
     cout<<"Enter the string :";
     cin>>s;
-
     int n = s.size();
     int powsize = pow(2,n);
     string temp="";
