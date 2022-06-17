@@ -3,10 +3,10 @@ import java.util.*;
 
 public class first {
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        String s="";
-        System.out.println("Enter name :");
-        s = sc.nextLine();
-        System.out.println("Your name is : " + s);
+        ArrayList<Integer>arr = new ArrayList<Integer>();
+         arr.add(20);
+         arr.add(30);
+         arr.add(10);
+         System.out.println(arr);
     }
 }
