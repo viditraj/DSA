@@ -1,4 +1,5 @@
 //Program to find the maximum sum of all the subarray elements 
+//Kaden's Algorithm
 
 #include <iostream>
 
@@ -7,7 +8,7 @@ using namespace std;
 int maxSum(int ar[] , int n){
     int maxElement = ar[0];
     int res =ar[0];
-    for(int i =0;i<n;i++){
+    for(int i =1;i<n;i++){
         maxElement = max(maxElement+ar[i],ar[i]);
         res = max(res , maxElement);
     }
