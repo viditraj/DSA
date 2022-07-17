@@ -20,7 +20,7 @@ int majorityElementHM(int ar[] ,int n){
 }
 
 
-//Time Complexity : O(N)
+//Time Complexity without HM: O(N)
 int majorityElement(int ar[] ,int n){
     int candid=ar[0];
     int count=1;
