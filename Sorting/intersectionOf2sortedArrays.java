@@ -9,7 +9,10 @@ class intersectionOf2sortedArrays{
         int l1 = ar.length,l2 = ar2.length;
         int i=0,j=0;
         while(i<l1 && j<l2){
-            if(i>0 && ar[i]==ar[i-1]) continue; // to handle duplicate elements
+            if(i>0 && ar[i]==ar[i-1]){
+                i++;
+                continue; // to handle duplicate elements
+            } 
             
             if(ar[i]<ar[j]) i++;
             else if(ar[i]>ar[j]) j++;
